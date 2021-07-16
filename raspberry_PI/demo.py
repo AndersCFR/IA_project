@@ -14,7 +14,7 @@ def ls(ruta=os.getcwd()):
     return [arch.name for arch in os.scandir(ruta) if arch.is_file()]
 
 class servoMotor:
-    def mover():
+    def mover(self):
         GPIO.setmode(GPIO.BOARD)
         pinR = 8
         GPIO.setup(pinR, GPIO.OUT)
